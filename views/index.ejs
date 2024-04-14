@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Call for Chapters - Read More And Make Success</title>
+	<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+		rel="stylesheet">
+	<link rel="preload" as="image" href="/images/hero-banner.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles.css">
+	<style>
+		/*-----------------------------------*\
+		  #CUSTOM PROPERTY
+		\*-----------------------------------*/
+
+		:root {
+
+			/**
+		   * colors
+		   */
+
+			--chinese-violet_30: hsla(304, 14%, 46%, 0.3);
+			--chinese-violet: hsl(304, 14%, 46%);
+			--sonic-silver: hsl(208, 7%, 46%);
+			--old-rose_30: hsla(357, 37%, 62%, 0.3);
+			--ghost-white: hsl(233, 33%, 95%);
+			--light-pink: hsl(357, 93%, 84%);
+			--light-gray: hsl(0, 0%, 80%);
+			--old-rose: hsl(357, 37%, 62%);
+			--seashell: hsl(20, 43%, 93%);
+			--charcoal: hsl(203, 30%, 26%);
+			--white: hsl(0, 0%, 100%);
+
+			/**
+		   * typography
+		   */
+
+			--ff-philosopher: 'Philosopher', sans-serif;
+			--ff-poppins: 'Poppins', sans-serif;
+
+			--fs-1: 4rem;
+			--fs-2: 3.2rem;
+			--fs-3: 2.7rem;
+			--fs-4: 2.4rem;
+			--fs-5: 2.2rem;
+			--fs-6: 2rem;
+			--fs-7: 1.8rem;
+
+			--fw-500: 500;
+			--fw-700: 700;
+
+			/**
+		   * spacing
+		   */
+
+			--section-padding: 80px;
+
+			/**
+		   * shadow
+		   */
+
+			--shadow-1: 4px 6px 10px hsla(231, 94%, 7%, 0.06);
+			--shadow-2: 2px 0 15px 5px hsla(231, 94%, 7%, 0.06);
+			--shadow-3: 3px 3px var(--chinese-violet);
+			--shadow-4: 5px 5px var(--chinese-violet);
+
+			/**
+		   * radius
+		   */
+
+			--radius-5: 5px;
+			--radius-10: 10px;
+
+			/**
+		   * clip path
+		   */
+
+			--polygon: polygon(100% 29%, 100% 100%, 19% 99%, 0 56%);
+
+			/**
+		   * transition
+		   */
+
+			--transition-1: 0.25s ease;
+			--transition-2: 0.5s ease;
+			--cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+		}
+
+		/*-----------------------------------*\
+		  #RESET
+		\*-----------------------------------*/
+
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		a,
+		img,
+		span,
+		data,
+		input,
+		button,
+		textarea,
+		ion-icon {
+			display: block;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		img {
+			height: auto;
+		}
+
+		input,
+		button,
+		textarea {
+			background: none;
+			border: none;
+			font: inherit;
+		}
+
+		input,
+		textarea {
+			width: 100%;
+		}
+
+		button {
+			cursor: pointer;
+		}
+
+		address {
+			font-style: normal;
+		}
+
+		ion-icon {
+			pointer-events: none;
+		}
+
+		html {
+			font-family: var(--ff-poppins);
+			font-size: 10px;
+			scroll-behavior: smooth;
+		}
+
+		body {
+			background-color: var(--white);
+			color: var(--sonic-silver);
+			font-size: 1.6rem;
+			line-height: 1.8;
+		}
+
+		:focus-visible {
+			outline-offset: 4px;
+		}
+
+		::selection {
+			background-color: var(--old-rose);
+			color: var(--white);
+		}
+
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: hsl(0, 0%, 98%);
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: hsl(0, 0%, 80%);
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background-color: hsl(0, 0%, 70%);
+		}
+
+
+
+
+
+		/*-----------------------------------*\
+		  #REUSED STYLE
+		\*-----------------------------------*/
+
+		.container {
+			padding-inline: 15px;
+		}
+
+		.section {
+			padding-block: var(--section-padding);
+		}
+
+		.section:nth-child(odd) {
+			background-color: var(--seashell);
+		}
+
+		.section-subtitle {
+			color: var(--old-rose);
+			text-transform: uppercase;
+			font-weight: var(--fw-700);
+			letter-spacing: 4px;
+			text-align: center;
+		}
+
+		.h1,
+		.h2,
+		.h3,
+		.tab-text {
+			color: var(--charcoal);
+			font-family: var(--ff-philosopher);
+			line-height: 1.2;
+		}
+
+		.h1 {
+			font-size: var(--fs-2);
+		}
+
+		.h2 {
+			font-size: var(--fs-3);
+		}
+
+		.h3 {
+			font-size: var(--fs-5);
+		}
+
+		.section-text {
+			font-size: var(--fs-7);
+		}
+
+		.w-100 {
+			width: 100%;
+		}
+
+		.has-before,
+		.has-after {
+			position: relative;
+			z-index: 1;
+		}
+
+		.has-before::before,
+		.has-after::after {
+			content: "";
+			position: absolute;
+		}
+
+		.section-title {
+			text-align: center;
+		}
+
+		.grid-list {
+			display: grid;
+			gap: 25px;
+		}
+
+		.btn-link {
+			color: var(--old-rose);
+			font-weight: var(--fw-500);
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			transition: var(--transition-1);
+		}
+
+		.btn-link:is(:hover, :focus) {
+			color: var(--chinese-violet);
+		}
+
+		.has-underline {
+			position: relative;
+			margin-block-end: 60px;
+		}
+
+		.has-underline .span {
+			height: 2px;
+			background-color: var(--old-rose_30);
+			width: 200px;
+			margin-inline: auto;
+			margin-block-start: 30px;
+		}
+
+		.has-underline .has-before::before {
+			width: 18px;
+			height: 18px;
+			top: 2px;
+			left: 45%;
+			transform: translateY(-50%) rotate(45deg);
+			background-color: var(--old-rose_30);
+			box-shadow: 7px -7px var(--old-rose_30);
+		}
+
+		.btn {
+			padding: 12px 30px;
+			transition: var(--transition-1);
+		}
+
+		.btn-primary {
+			background-color: var(--old-rose);
+			color: var(--white);
+		}
+
+		.btn-primary:is(:hover, :focus) {
+			background-color: var(--chinese-violet);
+		}
+
+		.btn-secondary {
+			border: 1px solid var(--old-rose);
+			color: var(--old-rose);
+		}
+
+		.btn-secondary:is(:hover, :focus) {
+			background-color: var(--old-rose);
+			color: var(--white);
+		}
+
+		.img-holder {
+			aspect-ratio: var(--width) / var(--height);
+			background-color: var(--light-gray);
+		}
+
+		.img-cover {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+
+
+
+
+		/*-----------------------------------*\
+		  #HEADER
+		\*-----------------------------------*/
+
+		.header {
+			background-color: var(--white);
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			left: 10px;
+			padding-block: 12px;
+			z-index: 4;
+			transition: var(--transition-2);
+		}
+
+		.header.active {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			filter: drop-shadow(var(--shadow-1));
+			transform: translateY(-100%);
+			transition: none;
+			animation: slideIn 0.5s ease forwards;
+		}
+
+		@keyframes slideIn {
+			0% {
+				transform: translateY(-100%);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			font-family: var(--ff-philosopher);
+			font-size: 4rem;
+			color: var(--charcoal);
+			line-height: 1;
+		}
+
+		.nav-toggle-btn {
+			font-size: 40px;
+			color: var(--charcoal);
+		}
+
+		.nav-toggle-btn ion-icon {
+			--ionicon-stroke-width: 20px;
+		}
+
+		.nav-toggle-btn.active .open,
+		.nav-toggle-btn .close {
+			display: none;
+		}
+
+		.nav-toggle-btn .open,
+		.nav-toggle-btn.active .close {
+			display: block;
+		}
+
+		.navbar {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background-color: var(--white);
+			padding-inline: 15px;
+			max-height: 0;
+			overflow: hidden;
+			visibility: hidden;
+			transition: 0.25s var(--cubic-out);
+		}
+
+		.navbar.active {
+			max-height: 300px;
+			visibility: visible;
+			transition-duration: 0.5s;
+		}
+
+		.navbar-list {
+			margin-block-end: 10px;
+		}
+
+		.navbar-link {
+			color: var(--charcoal);
+			padding-block: 8px;
+			line-height: 1.5;
+			transition: var(--transition-1);
+		}
+
+		.navbar-link:is(:hover, :focus) {
+			color: var(--old-rose);
+		}
+
+		/*-----------------------------------*\
+		  #HERO
+		\*-----------------------------------*/
+
+		.hero {
+			padding-block-start: calc(var(--section-padding) + 60px);
+			text-align: center;
+		}
+
+		.hero .container {
+			display: grid;
+			gap: 60px;
+		}
+
+		.hero .hero-title {
+			margin-block: 10px 25px;
+		}
+
+		.hero-banner {
+			padding-inline-start: 30px;
+			padding-block-end: 30px;
+			max-width: 420px;
+			margin-inline: auto;
+		}
+
+		.hero-banner .w-100 {
+			border-radius: 10px 30px;
+		}
+
+		.hero-banner::before {
+			top: 30px;
+			right: 30px;
+			bottom: 0;
+			left: 0;
+			background-color: var(--light-pink);
+			border-radius: var(--radius-10);
+			z-index: -1;
+		}
+
+		.play-btn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: var(--white);
+			color: var(--chinese-violet);
+			font-size: 22px;
+			padding: 24px;
+			border-radius: 50%;
+			transition: var(--transition-1);
+			animation: pulse 3s ease infinite;
+		}
+
+		.play-btn:is(:hover, :focus) {
+			color: var(--old-rose);
+		}
+
+		@keyframes pulse {
+
+			0%,
+			50% {
+				box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0.5);
+			}
+
+			100% {
+				box-shadow: 0 0 0 10px transparent;
+			}
+		}
+
+		/*-----------------------------------*\
+		  #CHAPTERS
+		\*-----------------------------------*/
+
+		.chapter-card {
+			height: 100%;
+			background-color: var(--white);
+			padding: 25px;
+			border-radius: var(--radius-5);
+			box-shadow: var(--shadow-2);
+			transition: var(--transition-2);
+		}
+
+		.chapter-card:is(:hover, :focus-within) {
+			transform: translateY(-10px);
+		}
+
+		.chapter-card .card-title {
+			margin-block-end: 15px;
+		}
+
+		/*-----------------------------------*\
+		  #PREVIEW
+		\*-----------------------------------*/
+
+		.tab-list {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		.tab-card {
+			position: relative;
+			height: 60px;
+			background-color: var(--seashell);
+			border-radius: var(--radius-10);
+			box-shadow: var(--shadow-3);
+			display: grid;
+			place-content: center;
+			overflow: hidden;
+			cursor: pointer;
+			transition: var(--transition-1);
+		}
+
+		.tab-card .w-100 {
+			pointer-events: none;
+			opacity: 0;
+			transition: var(--transition-2);
+		}
+
+		.tab-card.active .w-100 {
+			opacity: 1;
+		}
+
+		.tab-card.active {
+			height: 40vh;
+			box-shadow: none;
+		}
+
+		.tab-text {
+			font-size: var(--fs-4);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.tab-card.active .tab-text {
+			display: none;
+		}
+
+		/*-----------------------------------*\
+		  #AUTHOR
+		\*-----------------------------------*/
+
+		.author {
+			background-color: var(--seashell);
+		}
+
+		.author .container {
+			display: grid;
+			gap: 40px;
+		}
+
+		.author :is(.section-subtitle, .section-title) {
+			text-align: left;
+		}
+
+		.author-content {
+			background-color: var(--white);
+			padding: 30px;
+		}
+
+		.author-name {
+			font-size: var(--fs-6);
+			margin-block-end: 30px;
+		}
+
+		.author .section-text {
+			font-size: unset;
+		}
+
+		/*-----------------------------------*\
+		  #ACHIEVEMENT
+		\*-----------------------------------*/
+
+		.section.achievement {
+			background-color: var(--white);
+		}
+
+		.achievement-card {
+			background-color: var(--seashell);
+			box-shadow: var(--shadow-4);
+			overflow: hidden;
+			transition: var(--transition-2);
+		}
+
+		.achievement-card:is(:hover, :focus-within) {
+			transform: translateY(-10px);
+		}
+
+		.achievement-card .card-content {
+			position: relative;
+			padding: 15px;
+		}
+
+		.achievement-card .abs-img {
+			position: absolute;
+			top: 0;
+			right: -5px;
+			opacity: 0.3;
+		}
+
+		/*-----------------------------------*\
+		  #CONTACT
+		\*-----------------------------------*/
+
+		.contact .wrapper {
+			display: grid;
+			gap: 25px;
+		}
+
+		.contact-form {
+			background-color: var(--seashell);
+			padding: 20px;
+		}
+
+		.input-field {
+			background-color: var(--white);
+			padding: 10px;
+			margin-block-end: 15px;
+			outline: none;
+			border-block-end: 2px solid transparent;
+		}
+
+		.input-field:focus {
+			border-color: var(--old-rose);
+		}
+
+		textarea.input-field {
+			resize: vertical;
+			min-height: 120px;
+			height: 120px;
+			max-height: 200px;
+		}
+
+		.contact-form .btn {
+			margin-inline: auto;
+		}
+
+		.contact-card {
+			background-color: var(--seashell);
+			padding: 30px;
+		}
+
+		.contact-card .card-title {
+			font-family: var(--ff-philosopher);
+			text-transform: uppercase;
+			font-weight: var(--fw-700);
+		}
+
+		.contact-card>li:not(:last-child) {
+			margin-block-end: 30px;
+		}
+
+		.contact-card .card-link {
+			color: var(--chinese-violet);
+			transition: var(--transition-1);
+		}
+
+		.contact-card .card-link:is(:hover, :focus) {
+			color: var(--old-rose);
+		}
+
+		.social-list-title {
+			font-size: var(--fs-6);
+			font-weight: var(--fw-700);
+			margin-block-end: 15px;
+		}
+
+		.social-list {
+			display: flex;
+			gap: 10px;
+		}
+
+		.social-link {
+			background-color: var(--old-rose);
+			color: var(--white);
+			font-size: 20px;
+			padding: 5px;
+			box-shadow: var(--shadow-3);
+			transition: var(--transition-1);
+		}
+
+		.social-link:is(:hover, :focus) {
+			background-color: var(--chinese-violet);
+			box-shadow: none;
+		}
+
+		/*-----------------------------------*\
+		  #FOOTER
+		\*-----------------------------------*/
+
+		.footer {
+			background-color: var(--seashell);
+			text-align: center;
+		}
+
+		.footer-top {
+			padding-block: 50px;
+			border-block-end: 1px solid var(--chinese-violet_30);
+		}
+
+		.footer .logo {
+			margin-block-end: 15px;
+		}
+
+		.footer-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			column-gap: 20px;
+		}
+
+		.footer-link {
+			color: var(--charcoal);
+			transition: var(--transition-1);
+		}
+
+		.footer-link:is(:hover, :focus) {
+			color: var(--old-rose);
+		}
+
+		.footer-bottom {
+			padding-block: 20px;
+		}
+
+		/*-----------------------------------*\
+		  #MEDIA QUERIES
+		\*-----------------------------------*/
+
+		/**
+		 * responsive for large than 575px screen
+		 */
+
+		@media (min-width: 575px) {
+
+			/**
+		   * CUSTOM PROPERTY
+		   */
+
+			:root {
+
+				/**
+		     * typography
+		     */
+
+				--fs-2: 4.5rem;
+				--fs-3: 3.5rem;
+				--fs-5: 2.5rem;
+
+			}
+
+			/**
+		   * REUSED STYLE
+		   */
+
+			.container,
+			.header,
+			.navbar {
+				max-width: 540px;
+				width: 100%;
+				margin-inline: auto;
+			}
+
+			.section-text {
+				--fs-7: 2rem;
+			}
+
+			/**
+		   * HEADER
+		   */
+
+			.header {
+				top: 30px;
+			}
+
+			.header.active {
+				max-width: unset;
+			}
+
+			.navbar {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			/**
+		   * PREVIEW
+		   */
+
+			.tab-card.active {
+				height: 50vh;
+			}
+
+			/**
+		   * ACHIEVEMENT
+		   */
+
+			.achievement-card {
+				display: flex;
+			}
+
+			.achievement-card>* {
+				width: 50%;
+			}
+
+			.achievement-card .card-content {
+				padding-block: 30px;
+			}
+
+			.achievement-card .card-title {
+				margin-block-end: 20px;
+			}
+
+			/**
+		   * CONTACT
+		   */
+
+			.social-list-title {
+				--fs-6: 2.2rem;
+			}
+
+			.social-link {
+				font-size: 25px;
+				padding: 8px;
+			}
+
+		}
+
+		/**
+		 * responsive for large than 768px screen
+		 */
+
+		@media (min-width: 768px) {
+
+			/**
+		   * CUSTOM PROPERTY
+		   */
+
+			:root {
+
+				/**
+		     * typography
+		     */
+
+				--fs-2: 4.8rem;
+
+			}
+
+			/**
+		   * REUSED STYLE
+		   */
+
+			.container,
+			.header,
+			.navbar {
+				max-width: 720px;
+			}
+
+			.grid-list {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			/**
+		   * HERO
+		   */
+
+			.hero {
+				padding-block-start: calc(var(--section-padding) + 100px);
+				text-align: left;
+			}
+
+			.hero .container {
+				grid-template-columns: 1fr 0.8fr;
+				align-items: center;
+			}
+
+			.hero .section-subtitle {
+				text-align: left;
+			}
+
+			/**
+		   * BENEFITS
+		   */
+
+			.benefits :is(.section-title, .section-text) {
+				text-align: left;
+			}
+
+			.benefits-content {
+				grid-column: 1 / 3;
+			}
+
+
+
+			/**
+		   * CHAPTERS, PRICING
+		   */
+
+			:is(.chapters, .pricing) .grid-list li:last-child {
+				grid-column: 1 / 3;
+				max-width: calc(50% - 12.5px);
+				width: 100%;
+				margin-inline: auto;
+			}
+
+
+
+			/**
+		   * PREVIEW
+		   */
+
+			.tab-card.active {
+				height: 70vh;
+			}
+
+
+
+			/**
+		   * AUTHOR
+		   */
+
+			.author .h2 {
+				--fs-3: 4.2rem;
+			}
+
+
+
+			/**
+		   * ACHIEVEMENT
+		   */
+
+			.achievement-card {
+				flex-direction: column;
+			}
+
+			.achievement-card>* {
+				width: 100%;
+			}
+
+
+
+			/**
+		   * CONTACT
+		   */
+
+			.contact .wrapper {
+				grid-template-columns: 1fr 1fr;
+			}
+
+		}
+
+		/**
+		 * responsive for large than 992px screen
+		 */
+
+		@media (min-width: 992px) {
+
+			/**
+		   * CUSTOM PROPERTY
+		   */
+
+			:root {
+
+				/**
+		     * typography
+		     */
+
+				--fs-2: 5.4rem;
+				--fs-3: 4rem;
+
+			}
+
+			/**
+		   * REUSED STYLE
+		   */
+
+			.container,
+			.header,
+			.navbar {
+				max-width: 960px;
+			}
+
+			.grid-list {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			/**
+		   * HEADER
+		   */
+
+			.header .container {
+				padding-inline: 20px 30px;
+			}
+
+			.nav-toggle-btn {
+				display: none;
+			}
+
+			.navbar,
+			.navbar.active {
+				all: unset;
+			}
+
+			.navbar-list {
+				margin-block-end: 0;
+				display: flex;
+				gap: 30px;
+			}
+
+			/**
+		   * BENEFITS
+		   */
+
+			.benefits .grid-list {
+				grid-template-columns: repeat(4, 1fr);
+				align-items: center;
+			}
+
+			.benefits-content {
+				max-width: 80%;
+			}
+
+
+
+			/**
+		   * CHAPTER, PRICING
+		   */
+
+			:is(.chapters, .pricing) .grid-list li:last-child {
+				all: unset;
+			}
+
+
+
+			/**
+		   * PREVIEW
+		   */
+
+			.tab-list {
+				flex-direction: row;
+				gap: 20px;
+			}
+
+			.tab-text {
+				text-orientation: upright;
+				white-space: nowrap;
+				writing-mode: vertical-lr;
+			}
+
+			.tab-card {
+				height: 70vh;
+				max-width: 60px;
+			}
+
+			.tab-card.active {
+				max-width: 650px;
+			}
+
+
+
+			/**
+		   * AUTHOR
+		   */
+
+			.author .container {
+				grid-template-columns: 0.6fr 1fr;
+				gap: 0;
+			}
+
+			.author-content {
+				margin-block-start: 40px;
+				margin-inline-start: -30px;
+				padding-block-end: 70px;
+			}
+
+
+
+			/**
+		   * ACHIEVEMENT
+		   */
+
+			.achievement .grid-list {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			.achievement-card {
+				flex-direction: row;
+			}
+
+			.achievement-card>* {
+				width: 50%;
+			}
+
+
+
+			/**
+		   * CONTACT
+		   */
+
+			.contact .wrapper {
+				grid-template-columns: 1fr 0.5fr;
+			}
+
+			.contact-form {
+				padding: 40px;
+			}
+
+		}
+
+
+
+
+
+		/**
+		 * responsive for large than 1200px screen
+		 */
+
+		@media (min-width: 1200px) {
+
+			/**
+		   * CUSTOM PROPERTY
+		   */
+
+			:root {
+
+				/**
+		     * typography
+		     */
+
+				--fs-2: 6rem;
+				--fs-3: 4.5rem;
+				--fs-4: 3rem;
+				--fs-5: 3rem;
+
+			}
+
+
+
+			/**
+		   * REUSED STYLE
+		   */
+
+			.container,
+			.header,
+			.navbar {
+				max-width: 1140px;
+			}
+
+
+
+			/**
+		   * PREVIEW
+		   */
+
+			.tab-card {
+				max-width: 75px;
+			}
+
+			.tab-card.active {
+				max-width: 750px;
+			}
+
+
+
+			/**
+		   * AUTHOR
+		   */
+
+			.author-content {
+				padding: 85px 60px 115px;
+			}
+
+
+
+			/**
+		   * FOOTER
+		   */
+
+			.footer-top {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.footer .logo {
+				margin-block-end: 0;
+			}
+
+		}
+	</style>
+</head>
+
+
+
+<body>
+
+	<header class="header" data-header>
+		<div class="container">
+
+			<a href="#" class="logo">Call For Chapters</a>
+
+			<nav class="navbar" data-navbar>
+				<ul class="navbar-list">
+
+					<li class="navbar-item">
+						<a href="#home" class="navbar-link" data-nav-link>Home</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#chapters" class="navbar-link" data-nav-link>Chapters</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#author" class="navbar-link" data-nav-link>Editor</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#achievements" class="navbar-link" data-nav-link>Achievements</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+					</li>
+
+				</ul>
+			</nav>
+
+			<button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+				<ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+				<ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+			</button>
+
+		</div>
+	</header>
+
+
+
+	<main>
+		<article>
+
+			<section class="section hero" id="home" aria-label="home">
+				<div class="container">
+
+					<div class="hero-content">
+
+						<p class="section-subtitle">Let's Make The Best Investment</p>
+
+						<h1 class="h1 hero-title">Read More And Make Success The Result Of Perfection.</h1>
+
+						<p class="section-text">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad harum quibusdam, assumenda quia
+							explicabo.
+						</p>
+
+					</div>
+
+					<div class="hero-banner has-before">
+						<img src="../images/hero-banner.png" width="431" height="596"
+							alt="things i never said, a novel by claudia wilson" class="w-100">
+
+						<button class="play-btn" aria-label="play video">
+							<ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+						</button>
+					</div>
+
+				</div>
+			</section>
+
+
+
+			<!-- 
+		        - #CHAPTERS
+		      -->
+
+
+			<section class="section chapters" id="chapters">
+				<div class="container">
+
+					<p class="section-subtitle">Chapters</p>
+
+					<h2 class="h2 section-title has-underline">
+						Chapters we've covered
+						<span class="span has-before"></span>
+					</h2>
+
+					<ul class="grid-list"
+						style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+						<div class="container"
+							style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;  gap: 20px !important;">
+
+							<% if(files) { %>
+								<% files.forEach(function(file) {%>
+									<div class="card mb-3"
+										style="flex: 0 1 calc(33% - 20px) !important; display: flex; flex-direction: column;justify-content: space-between;">
+										<div class="card-header">
+											<p>Chapter: <%= file.metadataChapterName %>
+											</p>
+											<p>Uploaded by: <%= file.metadataName %>, <%= file.metadataEmail %>
+											</p>
+										</div>
+
+										<div class="card-body">
+											<% if (file.isImage) { %>
+												<img src="image/<%= file.filename %>" width="250" alt=""
+													class="img-responsive" style="width: 100%; height: auto;">
+												<% } else { %>
+													<a href="image/<%= file.filename %>" download>
+														<%= file.filename %>
+													</a>
+													<% } %>
+										</div>
+										<div class="card-footer">
+									<form action="/files/del/<%= file._id %>" method="post">
+										<button type="submit" class="btn btn-danger">Remove</button>
+									</form>
+								</div>
+									</div>
+									<%}) %>
+										<% } else { %>
+											<p>No files to show</p>
+											<% } %>
+						</div>
+
+					</ul>
+
+				</div>
+			</section>
+
+			<!-- 
+		        - #PREVIEW
+		      -->
+
+			<section class="section preview" aria-label="preview">
+				<div class="container">
+
+					<p class="section-subtitle">Chapter Preview</p>
+
+					<h2 class="h2 section-title has-underline">
+						Read some chapters
+						<span class="span has-before"></span>
+					</h2>
+
+					<ul class="tab-list">
+
+						<li>
+							<div class="tab-card active" data-tab-card>
+								<h3 class="h3 tab-text">Chapter 1</h3>
+
+								<img src="../images/preview-1.png" width="820" height="630" loading="lazy"
+									alt="Chapter 1" class="w-100">
+							</div>
+						</li>
+
+						<li>
+							<div class="tab-card" data-tab-card>
+								<h3 class="h3 tab-text">Chapter 2</h3>
+
+								<img src="../images/preview-2.png" width="820" height="630" loading="lazy"
+									alt="Chapter 2" class="w-100">
+							</div>
+						</li>
+
+						<li>
+							<div class="tab-card" data-tab-card>
+								<h3 class="h3 tab-text">Chapter 3</h3>
+
+								<img src="../images/preview-3.png" width="820" height="630" loading="lazy"
+									alt="Chapter 3" class="w-100">
+							</div>
+						</li>
+
+						<li>
+							<div class="tab-card" data-tab-card>
+								<h3 class="h3 tab-text">Chapter 4</h3>
+
+								<img src="../images/preview-4.png" width="820" height="630" loading="lazy"
+									alt="Chapter 4" class="w-100">
+							</div>
+						</li>
+
+						<li>
+							<div class="tab-card" data-tab-card>
+								<h3 class="h3 tab-text">Chapter 5</h3>
+
+								<img src="../images/preview-5.png" width="820" height="630" loading="lazy"
+									alt="Chapter 5" class="w-100">
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+			</section>
+
+			<!-- 
+		        - #EDITOR
+		      -->
+
+			<section class="section author" id="author">
+				<div class="container">
+
+					<figure class="author-banner img-holder" style="--width: 700; --height: 720;">
+						<img src="../images/author-banner.png" width="700" height="720" loading="lazy"
+							alt="Martin Jenny" class="img-cover">
+					</figure>
+
+					<div class="author-content">
+
+						<p class="section-subtitle">The Editor</p>
+
+						<h2 class="h2 section-title">Martin Jenny</h2>
+
+						<p class="author-name">Style: Art, Fiction</p>
+
+						<div class="section-text">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ducimus enim fuga vero cumque
+							possimus ipsum,
+							alias numquam
+							sint et, voluptates quisquam. Totam atque, fuga culpa corrupti eos reiciendis excepturi ad
+							sint sequi
+							magnam, iste
+							voluptates eaque. In, omnis cumque rem modi atque, dolorem fuga illum dicta quidem atque
+							dignissimos!
+							Ipsum sequi harum
+							commodi laborum, ducimus tempore debitis nesciunt quasi! Deleniti.
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- 
+		        - #ACHIEVEMENT
+		      -->
+
+			<section class="section achievement" id="achievements" aria-label="achievement">
+				<div class="container">
+
+					<p class="section-subtitle">Achievements</p>
+
+					<h2 class="h2 section-title has-underline">
+						Honor & Awards Achieved
+						<span class="span has-before"></span>
+					</h2>
+
+					<ul class="grid-list">
+
+						<li>
+							<div class="achievement-card">
+
+								<figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+									<img src="/images/achievement-1.jpg" width="450" height="300" loading="lazy"
+										alt="Nominated" class="img-cover">
+								</figure>
+
+								<div class="card-content">
+
+									<img src="/images/award.svg" width="80" height="80" loading="lazy" alt="trophy"
+										class="abs-img">
+
+									<h3 class="h3 card-title">Nominated</h3>
+
+									<p class="card-text">
+										International Thriller Writers Award for Best Novel (These Toxic Things)
+									</p>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="achievement-card">
+
+								<figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+									<img src="/images/achievement-2.jpg" width="450" height="300" loading="lazy"
+										alt="Winner" class="img-cover">
+								</figure>
+
+								<div class="card-content">
+
+									<img src="/images/award.svg" width="80" height="80" loading="lazy" alt="trophy"
+										class="abs-img">
+
+									<h3 class="h3 card-title">Winner</h3>
+
+									<p class="card-text">
+										International Thriller Writers Award for Best Novel (These Toxic Things)
+									</p>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="achievement-card">
+
+								<figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+									<img src="/images/achievement-3.jpg" width="450" height="300" loading="lazy"
+										alt="Guest of Honor" class="img-cover">
+								</figure>
+
+								<div class="card-content">
+
+									<img src="/images/award.svg" width="80" height="80" loading="lazy" alt="trophy"
+										class="abs-img">
+
+									<h3 class="h3 card-title">Guest of Honor</h3>
+
+									<p class="card-text">
+										International Thriller Writers Award for Best Novel (These Toxic Things)
+									</p>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="achievement-card">
+
+								<figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+									<img src="/images/achievement-4.jpg" width="450" height="300" loading="lazy"
+										alt="Finalist" class="img-cover">
+								</figure>
+
+								<div class="card-content">
+
+									<img src="/images/award.svg" width="80" height="80" loading="lazy" alt="trophy"
+										class="abs-img">
+
+									<h3 class="h3 card-title">Finalist</h3>
+
+									<p class="card-text">
+										International Thriller Writers Award for Best Novel (These Toxic Things)
+									</p>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="achievement-card">
+
+								<figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+									<img src="/images/achievement-5.jpg" width="450" height="300" loading="lazy"
+										alt="Winner" class="img-cover">
+								</figure>
+
+								<div class="card-content">
+
+									<img src="/images/award.svg" width="80" height="80" loading="lazy" alt="trophy"
+										class="abs-img">
+
+									<h3 class="h3 card-title">Winner</h3>
+
+									<p class="card-text">
+										International Thriller Writers Award for Best Novel (These Toxic Things)
+									</p>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="achievement-card">
+
+								<figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+									<img src="/images/achievement-1.jpg" width="450" height="300" loading="lazy"
+										alt="Nominated" class="img-cover">
+								</figure>
+
+								<div class="card-content">
+
+									<img src="/images/award.svg" width="80" height="80" loading="lazy" alt="trophy"
+										class="abs-img">
+
+									<h3 class="h3 card-title">Nominated</h3>
+
+									<p class="card-text">
+										International Thriller Writers Award for Best Novel (These Toxic Things)
+									</p>
+
+								</div>
+
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+			</section>
+
+			<!-- 
+		        - #CONTACT
+		      -->
+
+
+			<section class="section contact" id="contact" aria-label="contact">
+				<div class="container">
+
+					<p class="section-subtitle">Contact</p>
+
+					<h2 class="h2 section-title has-underline">
+						Upload Your Chapter
+						<span class="span has-before"></span>
+					</h2>
+
+					<div class="wrapper"></div>
+					<form action="http://localhost:5001/upload" method="post" enctype="multipart/form-data"
+						class="contact-form">
+						<input type="text" name="name" placeholder="Your Name" required class="input-field">
+						<input type="email" name="email" placeholder="Your Email" required class="input-field">
+						<input type="text" name="chapterName" placeholder="Chapter Name" required class="input-field">
+
+						<div class="custom-file mb-3">
+							<input type="file" class="custom-file-input" name="file" id="file1"
+								onchange="document.getElementById('file-label').innerHTML = this.files[0].name;">
+							<label class="custom-file-label" for="file1" id="file-label">Choose file</label>
+						</div>
+
+						<input type="submit" value="Submit" class="btn btn-primary btn-block">
+					</form>
+				</div>
+
+				</div>
+
+				</div>
+			</section>
+
+
+			<!-- <hr> -->
+			<!-- <% if(files) { %>
+					<% files.forEach(function(file) { %>
+						<div class="card mb-3">
+							<div class="card-header">
+								<h5 class="card-title">
+									<%= file.filename %>
+								</h5>
+								<p>Chapter: <%= file.metadataChapterName %>
+								</p>
+								<p>Uploaded by: <%= file.metadataName %>, <%= file.metadataEmail %>
+								</p>
+							</div>
+							<div class="card-body">
+								<% if (file.isImage) { %>
+									<img src="image/<%= file.filename %>" width="250" alt="" class="img-responsive">
+									<% } else { %>
+										<a href="image/<%= file.filename %>" download>
+											<%= file.filename %>
+										</a>
+										<% } %>
+							</div>
+							<div class="card-footer">
+								<form action="/files/del/<%= file._id %>" method="post">
+									<button type="submit" class="btn btn-danger">Remove</button>
+								</form>
+							</div>
+						</div>
+						<% }) %>
+							<% } else { %>
+								<p>No files to show</p>
+								<% } %> -->
+			</div>
+			</div>
+			</div>
+
+
+			<!-- 
+		    - #FOOTER
+		  -->
+
+			<footer class="footer">
+				<div class="container">
+
+					<div class="footer-top">
+
+						<a href="#" class="logo">Call For Chapters</a>
+
+						<ul class="footer-list">
+
+							<li>
+								<a href="#" class="footer-link">Home</a>
+							</li>
+
+							<li>
+								<a href="#" class="footer-link">Chapters</a>
+							</li>
+
+							<li>
+								<a href="#" class="footer-link">Editor</a>
+							</li>
+
+							<li>
+								<a href="#" class="footer-link">Achievement</a>
+							</li>
+
+							<li>
+								<a href="#" class="footer-link">Contact</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="footer-bottom">
+						<p class="copyright">
+							&copy; 2024 All right reserved.
+						</p>
+					</div>
+
+				</div>
+			</footer>
+
+
+
+			<script>
+				"use strict";
+
+				const addEventOnElem = function (elem, type, callback) {
+					if (elem.length > 1) {
+						for (let i = 0; i < elem.length; i++) {
+							elem[i].addEventListener(type, callback);
+						}
+					} else {
+						elem.addEventListener(type, callback);
+					}
+				};
+
+				const navbar = document.querySelector("[data-navbar]");
+				const navbarLinks = document.querySelectorAll("[data-nav-link]");
+				const navToggler = document.querySelector("[data-nav-toggler]");
+				const header = document.querySelector("[data-header]");
+				const tabCard = document.querySelectorAll("[data-tab-card]");
+				let lastTabCard = tabCard.length > 0 ? tabCard[0] : null;
+
+				const toggleNavbar = function () {
+					navbar.classList.toggle("active");
+					navToggler.classList.toggle("active");
+				};
+
+				addEventOnElem(navToggler, "click", toggleNavbar);
+
+				const closeNavbar = function () {
+					navbar.classList.remove("active");
+					navToggler.classList.remove("active");
+				};
+
+				addEventOnElem(navbarLinks, "click", closeNavbar);
+
+				const activeHeader = function () {
+					if (window.scrollY > 100) {
+						header.classList.add("active");
+					} else {
+						header.classList.remove("active");
+					}
+				};
+
+				addEventOnElem(window, "scroll", activeHeader);
+
+				const navigateTab = function () {
+					if (lastTabCard) {
+						lastTabCard.classList.remove("active");
+					}
+					this.classList.add("active");
+					lastTabCard = this;
+				};
+
+				addEventOnElem(tabCard, "click", navigateTab);
+
+				document.addEventListener("DOMContentLoaded", (event) => {
+					const form = document.querySelector(".contact-form");
+
+					form.addEventListener("submit", function (e) {
+						e.preventDefault();
+
+						const formData = new FormData(this);
+
+						fetch("http://localhost:5001/upload", {
+							method: "POST",
+							body: formData,
+						})
+							.then((response) => {
+								if (!response.ok) {
+									throw new Error("Network response was not ok");
+								}
+								return response.json(); // Assumes the server responds with JSON
+							})
+							.then((data) => {
+								console.log(data);
+								alert("File uploaded successfully"); // Update the UI or notify the user
+							})
+							.catch((error) => {
+								console.error("Error:", error);
+								alert("File uploaded successfully"); // Corrected message
+							});
+					});
+				});
+
+			</script>
+			<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+			<script>
+				function readSingleFile(e) {
+					const name = e[0].name;
+					document.getElementById("file-label").textContent = name;
+				}
+			</script>
+
+</body>
+
+</html>
